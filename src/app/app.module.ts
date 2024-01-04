@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginModule } from './login/login.module';
-import { LoginRoutingModule } from './login/login-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +10,7 @@ import { LoginRoutingModule } from './login/login-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, ReactiveFormsModule, FormsModule, LoginModule, LoginRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
