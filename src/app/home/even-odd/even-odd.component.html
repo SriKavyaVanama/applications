@@ -1,1 +1,28 @@
-<p>even-odd works!</p>
+<div>
+  <form [formGroup]="numberForm">
+    <label for="userInput">Enter the Number: </label>
+    <input
+      type="number"
+      class="number-input"
+      id="userInput"
+      formControlName="userInput"
+      (keyup)="hideResult()"
+    />
+    <button
+      type="button"
+      class="btn btn-primary btn-submit"
+      (click)="checkEvenOrOdd()"
+    >
+      Submit
+    </button>
+    <div>
+      <p  *ngIf="isResultShown">
+        The Number {{ numberForm.get("userInput")?.value }} is {{ result }}.
+      </p>
+      <p  *ngIf="isInvalidNumber">
+        The Number is invalid
+      </p>
+    </div>
+  </form>
+</div>
+
