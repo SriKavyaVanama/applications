@@ -6,16 +6,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
-  declarations: [
-    HomePageComponent,
-    EvenOddComponent,
-    CalculatorComponent
-  ],
-  imports: [
-    CommonModule, FormsModule, ReactiveFormsModule, RouterModule
-  ]
+  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
 })
-export class HomeModule { }
+export class HomeModule {}

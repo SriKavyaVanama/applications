@@ -6,7 +6,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 
 
 const routes: Routes = [{ path: 'home', component: HomePageComponent },
-{ path: 'evenOdd', component: EvenOddComponent },
+{ path: 'even-odd', component: EvenOddComponent },
 { path: 'calculator', component: CalculatorComponent }];
 
 @NgModule({
