@@ -5,9 +5,10 @@ import { EvenOddComponent } from './even-odd/even-odd.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { PrimeComponent } from './prime/prime.component';
 
 @NgModule({
-  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent],
+  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
 })
 export class HomeModule {}
