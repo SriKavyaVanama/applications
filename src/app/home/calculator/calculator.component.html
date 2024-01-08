@@ -1,1 +1,48 @@
-<p>calculator works!</p>
+<div>
+  <form [formGroup]="calculatorForm">
+    <div>
+      <label for="numberEntered">Enter the Number: </label>
+      <input type="text" class="number-input" formControlName="input" />
+      <button
+        type="button"
+        class="btn btn-primary btn-submit"
+        (click)="onClear()"
+      >
+        Clear
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary btn-submit"
+        *ngFor="let numbers of numberList"
+        (click)="setInputNumber(numbers)"
+      >
+        {{ numbers }}
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary btn-submit"
+        *ngFor="let operators of operatorList"
+        (click)="setInputNumber(operators)"
+      >
+        {{ operators }}
+      </button>
+    </div>
+    <div>
+      <button
+        type="button"
+        class="btn btn-primary btn-submit"
+        (click)="onSubmit()"
+        *ngIf="inputEntered"
+      >
+        =
+      </button>
+    </div>
+    <div *ngIf="displayResult">
+      <p>Result is: {{ result }}</p>
+    </div>
+  </form>
+</div>
