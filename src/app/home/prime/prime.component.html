@@ -1,0 +1,19 @@
+<form [formGroup]="primeNumber">
+  <div>
+    <label class="label-display">Enter the Number: </label>
+    <input type="number" formControlName="prime" class="number-input" (keyup)="hideResult()" />
+  </div>
+  <button
+    type="button"
+    class="btn btn-primary btn-submit"
+    (click)="primeOrNot()"
+  >
+    Submit
+  </button>
+  <div class="result-text-display">
+    <p *ngIf="isResultShown">
+      The Number {{ enteredNumber }} is {{ result }}.
+    </p>
+    <p *ngIf="isInvalidNumber">The Number is invalid</p>
+  </div>
+</form>
