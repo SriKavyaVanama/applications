@@ -6,6 +6,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { PrimeComponent } from './prime/prime.component';
 import { FactorialComponent } from './factorial/factorial.component';
 import { FibonacciComponent } from './fibonacci/fibonacci.component';
+import { ArmstrongComponent } from './armstrong/armstrong.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'prime', component: PrimeComponent },
   { path: 'factorial', component: FactorialComponent },
   { path: 'fibonacci', component: FibonacciComponent },
+  { path: 'armstrong', component: ArmstrongComponent },
 ];
 
 @NgModule({
