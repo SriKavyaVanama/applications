@@ -6,9 +6,11 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { PrimeComponent } from './prime/prime.component';
+import { FactorialComponent } from './factorial/factorial.component';
+import { FibonacciComponent } from './fibonacci/fibonacci.component';
 
 @NgModule({
-  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent],
+  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent, FactorialComponent, FibonacciComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
 })
 export class HomeModule {}
