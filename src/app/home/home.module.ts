@@ -10,9 +10,10 @@ import { FactorialComponent } from './factorial/factorial.component';
 import { FibonacciComponent } from './fibonacci/fibonacci.component';
 import { ArmstrongComponent } from './armstrong/armstrong.component';
 import { PosnegComponent } from './posneg/posneg.component';
+import { PalindromeComponent } from './palindrome/palindrome.component';
 
 @NgModule({
-  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent, FactorialComponent, FibonacciComponent, ArmstrongComponent, PosnegComponent],
+  declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent, FactorialComponent, FibonacciComponent, ArmstrongComponent, PosnegComponent, PalindromeComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
 })
 export class HomeModule {}

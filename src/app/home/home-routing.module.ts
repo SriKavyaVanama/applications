@@ -8,6 +8,7 @@ import { FactorialComponent } from './factorial/factorial.component';
 import { FibonacciComponent } from './fibonacci/fibonacci.component';
 import { ArmstrongComponent } from './armstrong/armstrong.component';
 import { PosnegComponent } from './posneg/posneg.component';
+import { PalindromeComponent } from './palindrome/palindrome.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'factorial', component: FactorialComponent },
   { path: 'fibonacci', component: FibonacciComponent },
   { path: 'armstrong', component: ArmstrongComponent },
-  { path: 'posneg', component: PosnegComponent }
+  { path: 'posneg', component: PosnegComponent },
+  { path: 'palindrome', component: PalindromeComponent },
 ];
 
 @NgModule({
