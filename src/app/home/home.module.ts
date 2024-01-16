@@ -12,6 +12,7 @@ import { ArmstrongComponent } from './armstrong/armstrong.component';
 import { PosnegComponent } from './posneg/posneg.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
 
+
 @NgModule({
   declarations: [HomePageComponent, EvenOddComponent, CalculatorComponent, PrimeComponent, FactorialComponent, FibonacciComponent, ArmstrongComponent, PosnegComponent, PalindromeComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
