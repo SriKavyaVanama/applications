@@ -1,0 +1,28 @@
+<form [formGroup]="palindrome">
+    <div>
+      <label class="label-display">Enter the Input: </label>
+      <input type="text" formControlName="palindromeInput" class="number-input" (keyup)="hideResult()" />
+    </div>
+    <button
+      type="button"
+      class="btn btn-primary btn-submit"
+      (click)="checkPalindrome()"
+    >
+      Submit
+    </button>
+    <div class="result-text-display">
+      <p *ngIf="isResultShown">
+        The {{ enteredInput }} is {{ result }}.
+      </p>
+      <p *ngIf="isInvalidNumber">The Number is invalid</p>
+    </div>
+  </form>
+
+  <input type="text"  class="number-input" /> <button
+  type="button"
+  class="btn btn-primary btn-submit"
+  (click)="checkStringEqual()"
+>
+  Submit
+</button>
+  
