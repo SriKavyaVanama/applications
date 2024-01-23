@@ -1,22 +1,26 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginRoutingModule } from './login-routing.module';
-import { HomeModule } from '../home/home.module';
-import { HomeRoutingModule } from '../home/home-routing.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-
-
+import { HomeRoutingModule } from '../home/home-routing.module';
+import { HomeModule } from '../home/home.module';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { LoginRoutingModule } from './login-routing.module';
 
 @NgModule({
-  declarations: [
-    LoginPageComponent
-  ],
+  declarations: [LoginPageComponent],
   imports: [
-    CommonModule, ReactiveFormsModule, FormsModule, LoginRoutingModule, HomeModule, HomeRoutingModule, RouterModule, MatFormFieldModule, MatIconModule
-  ]
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    LoginRoutingModule,
+    HomeModule,
+    HomeRoutingModule,
+    RouterModule,
+    MatFormFieldModule,
+    MatIconModule,
+  ],
 })
-export class LoginModule { }
+export class LoginModule {}
