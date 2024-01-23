@@ -1,0 +1,14 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Job</mat-label>
+    <input matInput formControlName="job" />
+  </mat-form-field>
+  <div class="example-label example-button-row">
+    <button mat-stroked-button>Submit</button>
+  </div>
+</form>

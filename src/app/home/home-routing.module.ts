@@ -9,6 +9,7 @@ import { FibonacciComponent } from './fibonacci/fibonacci.component';
 import { ArmstrongComponent } from './armstrong/armstrong.component';
 import { PosnegComponent } from './posneg/posneg.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
+import { MagazineComponent } from './magazine/magazine.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'armstrong', component: ArmstrongComponent },
   { path: 'posneg', component: PosnegComponent },
   { path: 'palindrome', component: PalindromeComponent },
+  { path: 'magazine', component: MagazineComponent }
 ];
 
 @NgModule({
